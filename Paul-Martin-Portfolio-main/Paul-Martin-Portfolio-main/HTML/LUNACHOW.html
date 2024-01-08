@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lunachow</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&family=Roboto+Mono&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">   
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+
+    <style>
+        *{
+            color: white;
+        }
+        body {
+            background-color: rgba(0, 0, 0, .8);
+        }
+
+        .tex h3 {
+            color: #3cec3f;
+            font-family: 'Roboto Mono', monospace;
+            text-align: center;
+            margin-top: 50px;
+            font-size: 40px;
+        }
+        .language {
+            display: flex;
+            text-align: center ;
+            align-items: center;
+            justify-content: center;
+            margin-top: 20px;
+            margin-bottom: 100px;
+        }
+        
+        .language p {
+            font-family: 'Lato', sans-serif;
+            text-align: center;
+            margin-inline: 30px;
+        }
+        .chal {
+            margin-top: 30px;
+        }
+        .chal h4 {
+            font-size: 30px;
+        }
+        .chal p {
+            font-size: 17px;
+        }
+
+        .fea h4 {
+            font-size: 30px;
+        }
+
+        .fea p {
+            font-family: 'Lato', sans-serif;
+            font-size: 15px;
+
+        }
+
+        .buton {
+            margin-bottom: 100px;
+            
+        }
+        
+        .bton {
+            border: 1px solid #3498db;
+            background: transparent;
+            padding: 10px 20px;
+            font-family: 'Lato', sans-serif;
+            font-size: 15px;
+            cursor: pointer;
+            margin: 10px;
+            transition: 0.8s;
+            position: relative
+            ;
+            overflow: hidden;
+        }
+
+        .bton1, .bton2 {
+            color: #3498db ;
+        }
+
+        .bton1:hover, .bton2:hover {
+            color: #fff;
+
+        }
+
+        .bton::before {
+            content: "";
+            position:absolute;
+            left: 0;
+            width: 100%;
+            height: 0%;
+            background: #3498db;
+            z-index: -1;
+            transition: 0.8s;
+        }
+
+        .bton1::before {
+            top: 0;
+            border-radius: 0 0 50% 50%;
+        }
+
+        .bton2::before {
+            bottom: 0;
+            border-radius:  50% 50% 0 0  ;
+        }
+
+        .bton1:hover::before, .bton2:hover::before {
+            height: 180%;
+        }
+
+        .d-block {
+            margin-top: 20px;
+            height: 600px;
+            width: 800px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+
+        <div class="img">
+            <div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-inner">
+                  <div class="carousel-item active">
+                    <img src="https://paulmartin.netlify.app/img/projects/lunachow/1.png" class="d-block w-100" alt="..." >
+                  </div>
+                  <div class="carousel-item">
+                    <img src="https://paulmartin.netlify.app/img/projects/lunachow/2.png" class="d-block w-100" alt="...">
+                  </div>
+                  <div class="carousel-item">
+                    <img src="https://paulmartin.netlify.app/img/projects/lunachow/3.png" class="d-block w-100" alt="...">
+                  </div>
+
+                  
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="prev">
+                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="next">
+                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Next</span>
+                </button>
+              </div>
+        </div>
+        <div class="tex">
+            <h3>LUNACHOW</h3>
+        </div>
+        <div class="language">
+            <p id="chart">✔ MERN</p>
+            <p id="web">✔ Web3</p>
+            <p id="sm">✔ Smart Contract</p>            
+            <p id="sm">✔ Subgraph</p>            
+
+        </div>
+    
+        <div class="container-fluid">
+            
+            <div class="fea" style="margin-top: 50px;">
+                <h4>THE FEATURES</h4>
+                <hr>
+                <p id="one">lunachow Token</p>
+                <p id="two">NFT Marketplace</p>
+                <p id="three">Trade according to the bridge</p>
+                <p id="for">Lottery</p>
+                <p id="five">DEX</p>
+            </div>
+
+            <div class="buton">
+                <a target="_blank" href="https://lunachow.com"><button class="bton bton1">PREVIEW</button></a>
+                <a href="index.html"><button class="bton bton2">GO BACK</button></a>
+            </div>
+        </div>
+    </div>
+    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
+    <SCript>
+        let Laravel = document.getElementById('laravel');
+        Laravel.innerHTML = "✔" + " " + "Laravel";
+
+        let boot = document.getElementById('bootstrap');
+        boot.innerHTML = "✔" + " " + "Bootstrap";
+
+        let chart = document.getElementById('chart');
+        chart.innerHTML = "✔" + " "+ chart.innerHTML;
+
+        let web = document.getElementById ('web');
+        web.innerHTML = "✔" + " "+ web.innerHTML;
+
+        let sm = document.getElementById('sm');
+        sm.innerHTML = "✔" + " "+ sm.innerHTML;
+
+        let one = document.getElementById('one');
+        one.innerHTML= "✔" + "    "+ one.innerHTML;
+
+        let two = document.getElementById('two');
+        two.innerHTML= "✔" + "    "+ two.innerHTML;
+
+        let three = document.getElementById('three');
+        three.innerHTML= "✔" + "    "+ three.innerHTML;
+
+        let four = document.getElementById('for');
+        four.innerHTML= "✔" + "    "+ four.innerHTML;
+
+        let fv = document.getElementById('five');
+        fv.innerHTML= "✔" + "    "+ fv.innerHTML;
+    </SCript>
+</body>
+</html>
